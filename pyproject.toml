@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{include = "render_start"}]
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "<empty>"
 django = "^4.2.3"
 whitenoise = {extras = ["brotli"], version = "^6.5.0"}
 dj-database-url = "^2.0.0"
