@@ -89,7 +89,7 @@ WSGI_APPLICATION = 'render_start.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default=os.environ.get('POSTGRES_URL', 'postgresql://render_start_user:django-psql-%34hbu$873438466g@i3784u4#6vf4ioglh4w76734q%@localhost:5432/render_start_db'), # postgresql://postgres:postgres@localhost:5432/render_start_db
+        default=os.environ.get('DATABASE_URL', 'postgresql://render_start_user:django-psql-%34hbu$873438466g@i3784u4#6vf4ioglh4w76734q%@localhost:5432/render_start_db'), # postgresql://postgres:postgres@localhost:5432/render_start_db
         conn_max_age=600
     ),
     'alt': {
